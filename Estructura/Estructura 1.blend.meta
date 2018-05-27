@@ -1,0 +1,193 @@
+fileFormatVersion: 2
+guid: fd54667864adbef43910c19388e387ac
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: Baranda
+    100002: Cube_001
+    100004: Cube_009
+    100006: Cube_010
+    100008: //RootNode
+    100010: Gradas
+    100012: Mesa_Bar
+    100014: Pilar_del_medio
+    100016: Pilares
+    100018: Piso_arriba
+    100020: Plane
+    100022: Plane_001
+    400000: Baranda
+    400002: Cube_001
+    400004: Cube_009
+    400006: Cube_010
+    400008: //RootNode
+    400010: Gradas
+    400012: Mesa_Bar
+    400014: Pilar_del_medio
+    400016: Pilares
+    400018: Piso_arriba
+    400020: Plane
+    400022: Plane_001
+    2100000: ladrillo
+    2100002: piso
+    2100004: paredes
+    2100006: gradas
+    2100008: paredes_002
+    2100010: paredes_001
+    2100012: piso_de_arriba
+    2100014: barandas
+    2300000: Baranda
+    2300002: Cube_001
+    2300004: Cube_009
+    2300006: Cube_010
+    2300008: Gradas
+    2300010: Mesa_Bar
+    2300012: Pilar_del_medio
+    2300014: Pilares
+    2300016: Piso_arriba
+    2300018: Plane
+    2300020: Plane_001
+    3300000: Baranda
+    3300002: Cube_001
+    3300004: Cube_009
+    3300006: Cube_010
+    3300008: Gradas
+    3300010: Mesa_Bar
+    3300012: Pilar_del_medio
+    3300014: Pilares
+    3300016: Piso_arriba
+    3300018: Plane
+    3300020: Plane_001
+    4300000: Plane_001
+    4300002: Plane
+    4300004: Cube_010
+    4300006: Cube_009
+    4300008: Mesa_Bar
+    4300010: Pilares
+    4300012: Pilar_del_medio
+    4300014: Piso_arriba
+    4300016: Gradas
+    4300018: Cube_001
+    4300020: Baranda
+    7400000: Default Take
+    9500000: //RootNode
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: barandas
+    second: {fileID: 2100000, guid: 172bc00cc629a4f408e28e154c2e9796, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: gradas
+    second: {fileID: 2100000, guid: b972a108de6667e4bbd2f523931e4e5f, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: ladrillo
+    second: {fileID: 2100000, guid: 52aeb704fdc3890468e90571d8c6cc51, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paredes
+    second: {fileID: 2100000, guid: 4e775b8da19f0a743aae7cb4835a9185, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paredes_001
+    second: {fileID: 2100000, guid: 4e775b8da19f0a743aae7cb4835a9185, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: paredes_002
+    second: {fileID: 2100000, guid: 4e775b8da19f0a743aae7cb4835a9185, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: piso
+    second: {fileID: 2100000, guid: 7d53b048753a775489dd3ecd27847f15, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: piso_de_arriba
+    second: {fileID: 2100000, guid: 775bc74d54890474d937acefd8a08d90, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
