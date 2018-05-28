@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "814448604511",
+    "firebase_url": "https://mesaregistros.firebaseio.com",
+    "project_id": "mesaregistros",
+    "storage_bucket": "mesaregistros.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:814448604511:android:0eff174c1d15d2e6",
+        "android_client_info": {
+          "package_name": "com.SevenBits.Registros"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "814448604511-21296kpa84thrmkfrfjla08rsv6lp3gh.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "814448604511-21296kpa84thrmkfrfjla08rsv6lp3gh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDwX2dEAj-XNNAKoGPvZiJ8CvU3m10cJCY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
