@@ -103,7 +103,7 @@ public class DatabaseHandler : MonoBehaviour
           };
     }
 
-    // Output text to the debug log text field, as well as the console.
+    // Output text de la consola
     public void DebugLog(string s)
     {
         Debug.Log(s);
@@ -116,9 +116,6 @@ public class DatabaseHandler : MonoBehaviour
         }
     }
 
-    // A realtime database transaction receives MutableData which can be modified
-    // and returns a TransactionResult which is either TransactionResult.Success(data) with
-    // modified data or TransactionResult.Abort() which stops the transaction with no changes.
     TransactionResult AddRegistro(MutableData mutableData)
     {
         List<object> Restaurant = mutableData.Value as List<object>;
@@ -128,17 +125,14 @@ public class DatabaseHandler : MonoBehaviour
             Restaurant = new List<object>();
         }
 
-        // Now we add the new score as a new entry that contains the email address and score.
         Dictionary<string, object> newRegMap = new Dictionary<string, object>();
         newRegMap["Numero Mesa"] = NumeroMesa;
         newRegMap["Nombre"] = Nombre;
         Restaurant.Add(newRegMap);
-
-        // You must set the Value to indicate data at that location has changed.
         mutableData.Value = Restaurant;
         return TransactionResult.Success(mutableData);
     }
-
+    //Este metodo Añade a la BD
     public void AddScore()
     {
         NumeroMesa = Int32.Parse(scoreText.text);
@@ -153,9 +147,8 @@ public class DatabaseHandler : MonoBehaviour
 
         DatabaseReference reference = FirebaseDatabase.DefaultInstance.GetReference("Denver");
 
-        DebugLog("Running Transaction...");
-        // Use a transaction to ensure that we do not encounter issues with
-        // simultaneous updates that otherwise might create more than MaxScores top scores.
+        DebugLog("Corriendo Transaccion...");
+
         reference.RunTransaction(AddRegistro)
           .ContinueWith(task =>
           {
