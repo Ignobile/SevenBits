@@ -1,0 +1,76 @@
+#lock {
+    position: relative; 
+    width:50%;
+    margin: auto;
+    display:block;
+}
+
+h1{
+    margin: auto;    
+    font-family: sans-serif;
+    font-weight: 100;
+    color: rgba(34, 230, 67, 0.829);
+    position: relative; 
+    bottom: center;
+    right: center;
+}
+
+ form{
+    position: relative; 
+    bottom: center;
+    right: center;
+ }
+ .card{
+    position: relative; 
+    bottom: -5em;
+    right: center;
+ }
+
+.sign{
+    background: white; 
+    color: #427A5D;
+    border: 3px solid #427A5D;
+    -webkit-transition-duration: 0.5s; 
+    transition-duration: 0.5s;
+    width: 100%;
+    height:65px;
+ }
+
+ .sign:hover {
+    background: #427A5D;
+    color: white;
+    font-size: 1.5em
+}
+
+#gen{
+    position: relative; 
+    bottom: 6em;
+    right: center;
+}
+
+#nomAp{
+    position: relative; 
+    bottom: -0.8em;
+    right: 2.3em;
+}
+
+#fechaNaci{
+    position: relative; 
+    bottom: 1.0em;
+    right: 2.3em;
+}
+
+legend{
+    position: relative; 
+    bottom: 1.1em;
+    right: -0.1em;
+    color: rgb(13, 66, 165);
+    font: oblique bold 120% cursive;
+    font-size: 23px;
+}
+
+#lal{
+    color: rgb(13, 66, 165);
+    font: oblique bold 120% cursive;
+    font-size: 20px;
+}
