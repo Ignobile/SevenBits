@@ -1,0 +1,109 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.content{
+    width: 100%;
+    height: 100%;
+}
+
+.slider{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-position: center center;
+    background-image: url(cartelera.jpg);
+    z-index: -1;
+}
+
+.slider li{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-position: center center;
+
+    animation: slider 40s linear infinite;
+    -moz-animation: slider 40s linear infinite;
+    -ms-animation: slider 40s linear infinite;
+    -o-animation: slider 40s linear infinite;
+    -webkit-animation: slider 40s linear infinite;
+}
+
+.slider .img1{
+    background-image: url(cinecentercocha11.jpg);
+    animation-delay: 10s;
+
+}
+
+.slider .img2{
+    background-image: url(denver.jpg);
+    animation-delay: 15s;
+}
+
+.slider .img3{
+    background-image: url(denver2.jpg);
+    animation-delay: 20s;
+}
+.slider .img4{
+    background-image: url(cartelera_cine_center_scz.png);
+    animation-delay: 25s;
+}
+
+.slider .img5{
+    background-image: url(cine4k.png);
+    animation-delay: 30s;
+}
+
+.slider .img6{
+    background-image: url(gente_cine.jpg);
+    animation-delay: 35s;
+}
+
+.slider .img7{
+    background-image: url(assets/imagenes/restaurante.jpg);
+    animation-delay: 40s;
+}
+
+@keyframes slider{
+    0%{opacity: 0; animation-timing-function: ease-in;}
+    10%{opacity: 1; animation-timing-function: ease-out;}
+    25%{opacity: 1; transform: scale(1);}
+    50%{opacity: 0; transform: translateX(10000px);}
+    100%{opacity: 0;}
+}
+
+@-moz-keyframes slider{
+    0%{opacity: 0; animation-timing-function: ease-in;}
+    10%{opacity: 1; animation-timing-function: ease-out;}
+    25%{opacity: 1; transform: scale(1);}
+    50%{opacity: 0; transform: scale(1);}
+    100%{opacity: 0;}
+}
+
+@-ms-keyframes slider{
+    0%{opacity: 0; animation-timing-function: ease-in;}
+    10%{opacity: 1; animation-timing-function: ease-out;}
+    25%{opacity: 1; transform: scale(1);}
+    50%{opacity: 0; transform: scale(2);}
+    100%{opacity: 0;}
+}
+@-o-keyframes slider{
+    0%{opacity: 0; animation-timing-function: ease-in;}
+    10%{opacity: 1; animation-timing-function: ease-out;}
+    25%{opacity: 1; transform: scale(1);}
+    50%{opacity: 0; transform: scale(2);}
+    100%{opacity: 0;}
+}
+@-webkit-keyframes slider{
+    0%{opacity: 0; animation-timing-function: ease-in;}
+    10%{opacity: 1; animation-timing-function: ease-out;}
+    25%{opacity: 1; transform: scale(1);}
+    50%{opacity: 0; transform: scale(2);}
+    100%{opacity: 0;}
+}
+.alert.flash-message{
+    margin-top: 10px
+}

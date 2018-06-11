@@ -1,0 +1,72 @@
+#lock {
+    position: relative; 
+    width:50%;
+    margin: auto;
+    display:block;
+}
+
+h1{
+    margin: auto;    
+    font-family: sans-serif;
+    font-weight: 100;
+    color: rgba(34, 230, 67, 0.829);
+    position: relative; 
+    bottom: center;
+    right: -2.0em;
+}
+
+ form{
+    position: relative; 
+    bottom: center;
+    right: center;
+ }
+ .card{
+    position: relative; 
+    bottom: -5em;
+    right: center;
+ }
+
+.sign{
+    background: white; 
+    color: #427A5D;
+    border: 3px solid #427A5D;
+    -webkit-transition-duration: 0.5s; 
+    transition-duration: 0.5s;
+    width: 100%;
+    height:65px;
+     
+ }
+
+ .sign:hover {
+    background: #427A5D;
+    color: white;
+    font-size: 1.5em
+}
+
+.goback{
+    position: relative; 
+    bottom: 0.8em;
+    right: 1em;
+    background: white;
+    color: #0f9d58; 
+    border-radius:45px;
+    border: 3px solid #0f9d58;
+    padding: 0.5em;
+    
+    -webkit-transition-duration: 0.5s; 
+    transition-duration: 0.5s;
+    width: 30%;
+    height:40px;
+   
+    
+ }
+
+ .goback:hover {
+    background: #0f9d58; 
+    color: white;
+}
+#lal{
+    color: rgb(13, 66, 165);
+    font: oblique bold 120% cursive;
+    font-size: 20px;
+}

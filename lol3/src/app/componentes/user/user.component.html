@@ -1,0 +1,32 @@
+<div class="forma-contenedor">
+    <div class="col-md-6 mx-auto" >
+      <div class="card">
+        <div class="card-body">
+          <form>
+              <button class="goback" routerLink="/login" routerLinkActive="active"><i class="fa fa-arrow-left"></i>  Atras</button>
+              <span class="error"></span>
+
+            <div class="form-group">
+              <h1>Sign In</h1>
+              <span class="error"></span>
+            </div>
+  
+          <div class="form-group">
+        <img id="image" type="image"
+        src="http://simpleicon.com/wp-content/uploads/multy-user.png"
+        alt="loginAdmi"   >
+          </div>
+  
+          <div class="form-group">
+            <button id="fb" (click)="onClickFacebookLogin()"><i class="fa fa-facebook  btn-lg" > </i> Facebook</button>
+          </div>
+  
+          <div class="form-group">
+            <button id="emailUSER" routerLink="/uemail" routerLinkActive="active"><i class="fa fa-envelope  btn-lg"></i> Email</button>
+          </div>
+          
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>

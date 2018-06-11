@@ -1,0 +1,40 @@
+<div class="forma-contenedor">
+    <div class="col-md-6 mx-auto" >
+      <div class="card">
+        <div class="card-body">
+          <form (submit)="onSubmitLogin1()">
+            
+            
+              <button class="goback" routerLink="/login" routerLinkActive="active"><i class="fa fa-arrow-left"></i>  Atras</button>
+              <span class="error"></span>
+           
+
+            <div class="form-group">
+              <h1>Sign In</h1>
+             <span class="error"></span>
+            </div>
+
+            <div class="form-group">
+              <label id="lal" class="col-form-label" for="inputCodigo" >Código: </label>
+              <input type="text" class="form-control" placeholder="##-###-##" id="inputCodigo">
+            </div>
+  
+            <div class="form-group">
+              <label id="lal" for="email">Email: </label>
+              <input type="email" name="email" id="email" placeholder="email@example.com" class="form-control">
+            </div>
+  
+            <div class="form-group">
+              <label id="lal" for="password">Contraseña: </label>
+              <input type="password" name="password" id="password" placeholder="Password" class="form-control">
+            </div>
+  
+            <div class="form-group">
+              <button type="submit" class="sign" value="Log in">Log In</button>
+            </div>
+  
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
