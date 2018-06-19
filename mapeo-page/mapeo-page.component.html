@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Lol3</title>
+  <base href="/">
+  <style type="text/css">
+  * {
+    margin: 0px;
+    padding: 0px;
+    }
+    .panel {
+      width: 970px;
+      height: 40px;
+      margin-top: 30px;
+      margin-left: 240px;
+      box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+    }
+    .botones li {
+      border: solid 1px white;
+      list-style: none;
+      float: left;
+      width: 192px;
+      height: 40px;
+      background-color: rgb(255, 196, 0);
+      text-align: center;
+      line-height: 40px;
+      display: block;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    .botones li a {
+      color: rgb(27, 27, 27);
+      text-decoration: none;
+      display: block;
+    }
+    .botones li a:hover {
+      background-color: rgb(216, 118, 7);
+      color: rgba(204, 51, 0, alpha);
+    }
+    .botones li:active {
+    background-color: rgba(153, 0, 0, alpha);
+    color: rgba(253, 0, 0, alpha);
+    }
+  </style>
+  <style type="text/css">
+  	* {
+    margin: 0px;
+    padding: 0px;
+    }
+    .panelmesaspa {
+      width: 750px;
+      height: 150px;
+      margin-top: 2px;
+      margin-left: 50px;
+      box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+      background-color: rgb(5, 166, 310);
+    }
+    .headpa {
+      color: rgb(252, 210, 74);
+      background-color: rgb(26, 25, 25);
+      text-align: center;
+      width: 750px;
+      height: 30px;
+      margin-left: 50px;
+      margin-top: 5px;
+      margin-right: 50px;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;  
+    }    
+       
+    .mesaspa button {
+      border: solid 1px white;
+      list-style: none;
+      float: left;
+      width: 150px;
+      height: 50px;
+      background-color: rgb(50, 51, 50);
+      text-align: center;
+      line-height: 40px;
+      display: block;
+      color: rgb(229, 238, 229);
+      font-family: Arial, Helvetica, sans-serif;
+    }  
+    .mesaspa button:hover {
+      background-color: rgb(255, 153, 0);
+      color: rgba(204, 51, 0, alpha);
+    }
+    .mesaspa button:active {
+    background-color: rgba(153, 0, 0, alpha);
+    color: rgba(253, 0, 0, alpha);
+    }
+    .panelmesaspb {
+      width: 750px;
+      height: 150px;
+      margin-top: 2px;
+      margin-left: 50px;
+      box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+      background-color: rgb(5, 166, 310);
+    }
+    .headpb {
+      color: rgb(252, 210, 74);
+      background-color: rgb(26, 25, 25);
+      text-align: center;
+      width: 750px;
+      height: 30px;
+      margin-left: 50px;
+      margin-top: 30px;
+      margin-right: 50px;
+      border-bottom-width: 2px;
+      border-bottom-style: solid;
+     }
+    .mesaspb button {
+      border: solid 1px white;
+      list-style: none;
+      float: left;
+      width: 150px;
+      height: 50px;
+      background-color: rgb(50, 51, 50);
+      text-align: center;
+      line-height: 40px;
+      display: block;
+      color: rgb(229, 238, 229);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    .mesaspb button:hover {
+      background-color: rgb(255, 153, 0);
+      color: rgba(204, 51, 0, alpha);
+    }
+    .mesaspb button:active {
+    background-color: rgba(153, 0, 0, alpha);
+    color: rgba(253, 0, 0, alpha);
+    }
+  </style>
+  <style>
+    form {
+      font-family: arial, sans-serif;
+      margin-left: 20px;
+      margin-bottom: 0px;
+      margin-top: 0px;
+      margin-right: 350px;
+      color: rgb(255, 255, 255);
+      display: block;
+      float: right;
+    }
+  </style>
+  <style>
+    .titulo {
+      color: rgb(252, 210, 74);
+      margin-left: 50px;
+      margin-top: 20px;
+      margin-right: 50px;
+      background-color: rgb(26, 25, 25);
+      text-align: center;
+      border-bottom-style: solid;
+      border-bottom-width: 2px;
+      margin-bottom: 10px;
+    }
+  </style>
+
+  <script>
+    function Sincronizarhr(elmnt,clr,hreserva) {
+      var hour = new Date().getHours(); 
+      var hrmayor = hreserva +1;
+      var estado;
+      var n = elmnt.id;
+      
+      if (hreserva == hour || hrmayor == hour) {
+          elmnt.style.color = clr;
+          document.getElementById("status").style.color = clr;
+          estado = "reservado";
+      } else {
+          elmnt.style.color = 'green';
+          document.getElementById("status").style.color = 'green';
+          estado = "disponible";
+      }
+    document.getElementById("status").innerHTML = estado;
+    document.getElementById("mesanum").innerHTML = n; 
+    }
+  </script>
+
+  
+ 
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body bgcolor=641E16>
+  <app-root></app-root>
+<div class="panel">
+  <ul class="botones">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Nosotros</a></li>
+    <li><a href="#">Ingresar</a></li>
+    <li><a href="#">Contactenos</a></li>
+    <li><a href="#">Salir</a></li>
+  </ul>
+</div>
+<div class="titulo">
+    <h2>Reservas de Mesas</h2>
+    <h3>Panel de control</h3>
+</div>
+<div>
+    <form action="/action_page.php">
+      <h1>Panel</h1>
+      <h2>Informacion de mesa</h2>
+      <h3>Estado:</h3>
+      <p id="status"></p>
+      <h3>Numero de Mesa:</h3>
+      <p id="mesanum"></p>
+      </form> 
+</div>
+
+<h2 class="headpa">Planta Alta</h2>
+	<div class="panelmesaspa">
+  	<ul class="mesaspa">  
+    	<button onclick="Sincronizarhr(this,'red','2')" id="16">Mesa 16</button>
+    	<button onclick="Sincronizarhr(this,'red','12')" id="17">Mesa 17</button>
+    	<button onclick="Sincronizarhr(this,'red','3')" id="18">Mesa 18</button>
+    	<button onclick="Sincronizarhr(this,'red','10')" id="19">Mesa 19</button>
+    	<button onclick="Sincronizarhr(this,'red','3')" id="20">Mesa 20</button>
+    	<button onclick="Sincronizarhr(this,'red','7')" id="21">Mesa 21</button>
+    	<button onclick="Sincronizarhr(this,'red','8')" id="22">Mesa 22</button>
+    	<button onclick="Sincronizarhr(this,'red','9')" id="23">Mesa 23</button>
+    	<button onclick="Sincronizarhr(this,'red','10')" id="24">Mesa 24</button>
+    	<button onclick="Sincronizarhr(this,'red','17')" id="25">Mesa 25</button>
+    	<button onclick="Sincronizarhr(this,'red','20')" id="26">Mesa 26</button>
+    	<button onclick="Sincronizarhr(this,'red','21')" id="27">Mesa 27</button>
+    	<button onclick="Sincronizarhr(this,'red','16')" id="28">Mesa 28</button>
+    	<button onclick="Sincronizarhr(this,'red','14')" id="29">Mesa 29</button>
+    	<button onclick="Sincronizarhr(this,'red','17')" id="30">Mesa 30</button>    
+  	</ul>
+	</div>
+    <h2 class="headpb">Planta Baja</h2>
+	<div class="panelmesaspb">
+  	<ul class="mesaspb">  
+    	<button onclick="Sincronizarhr(this,'red','3')" id="1">Mesa 1</button>
+    	<button onclick="Sincronizarhr(this,'red','3')" id="2">Mesa 2</button>
+    	<button onclick="Sincronizarhr(this,'red','13')" id="3">Mesa 3</button>
+    	<button onclick="Sincronizarhr(this,'red','7')" id="4">Mesa 4</button>
+    	<button onclick="Sincronizarhr(this,'red','8')" id="5">Mesa 5</button>
+    	<button onclick="Sincronizarhr(this,'red','9')" id="6">Mesa 6</button>
+    	<button onclick="Sincronizarhr(this,'red','10')" id="7">Mesa 7</button>
+    	<button onclick="Sincronizarhr(this,'red','11')" id="8">Mesa 8</button>
+    	<button onclick="Sincronizarhr(this,'red','12')" id="9">Mesa 9</button>
+    	<button onclick="Sincronizarhr(this,'red','8')" id="10">Mesa 10</button>
+    	<button onclick="Sincronizarhr(this,'red','8')" id="11">Mesa 11</button>
+    	<button onclick="Sincronizarhr(this,'red','7')" id="12">Mesa 12</button>
+    	<button onclick="Sincronizarhr(this,'red','12')" id="13">Mesa 13</button>
+    	<button onclick="Sincronizarhr(this,'red','21')" id="14">Mesa 14</button>
+    	<button onclick="Sincronizarhr(this,'red','12')" id="15">Mesa 15</button>    
+  	</ul>
+	</div>
+
+</body>
+</html>
